@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Operation Manager</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+        }
+        header {
+            background-color: #1E1E1E;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            color: #2196F3;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #2196F3;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #2196F3;
+            padding-bottom: 10px;
+        }
+        .project, .resume-item, .blog-item {
+            background-color: #1E1E1E;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .project h3, .resume-item h3, .blog-item h3 {
+            color: #2196F3;
+            margin-top: 0;
+        }
+        footer {
+            background-color: #1E1E1E;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        input[type="file"], input[type="submit"] {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #2196F3;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="file"]:hover, input[type="submit"]:hover {
+            background-color: #1769aa;
+        }
+    </style>
+    <script>
+        function uploadResume() {
+            alert("Resume upload functionality coming soon!");
+        }
+
+        function uploadBlogPost() {
+            alert("Blog post upload functionality coming soon!");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Business Operation Manager</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div id="about" class="section">
+            <h2>About Me</h2>
+            <p>I am a Business Operation Manager. My hobbies include playing with data and Python, and I have a keen interest in developing websites.</p>
+        </div>
+        <div id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of Project 1.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of Project 2.</p>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>Description of Project 3.</p>
+            </div>
+        </div>
+        <div id="blog" class="section">
+            <h2>Blog</h2>
+            <div class="blog-item">
+                <h3>Blog Post 1</h3>
+                <p>Content of Blog Post 1.</p>
+            </div>
+            <div class="blog-item">
+                <h3>Blog Post 2</h3>
+                <p>Content of Blog Post 2.</p>
+            </div>
+            <div class="blog-item">
+                <h3>Blog Post 3</h3>
+                <p>Content of Blog Post 3.</p>
+            </div>
+            <h3>Upload New Blog Post</h3>
+            <form onsubmit="uploadBlogPost(); return false;">
+                <input type="file" name="blogPost">
+                <input type="submit" value="Upload">
+            </form>
+        </div>
+        <div id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Email: example@example.com</p>
+            <p>Phone: 123-456-7890</p>
+        </div>
+        <div id="resume" class="section">
+            <h2>Resume</h2>
+            <div class="resume-item">
+                <h3>Experience</h3>
+                <p>Details about your work experience.</p>
+            </div>
+            <div class="resume-item">
+                <h3>Education</h3>
+                <p>Details about your educational background.</p>
+            </div>
+            <div class="resume-item">
+                <h3>Skills</h3>
+                <p>Details about your skills.</p>
+            </div>
+            <h3>Upload New Resume</h3>
+            <form onsubmit="uploadResume(); return false;">
+                <input type="file" name="resume">
+                <input type="submit" value="Upload">
+            </form>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Business Operation Manager
+    </footer>
+</body>
+</html>
